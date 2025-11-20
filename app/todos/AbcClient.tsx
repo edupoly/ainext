@@ -1,5 +1,5 @@
 'use client';
-import {abc} from '@/app/actions/abcAction'
+import {abc,getPlayers,getStudents} from '@/app/actions/abcAction'
 import { useTransition } from 'react';
 function AbcClient() {
   const [isPending, startTransition] = useTransition();
@@ -11,6 +11,7 @@ function AbcClient() {
         console.log(res);
         console.log("Endi ippudu");
       })
+      getStudents();
     });
   };
   return (

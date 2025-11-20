@@ -43,6 +43,7 @@ function Navbar() {
             <li><Link href={"/products"}>Products</Link></li>
             <li><Link href={"/recipes"}>Recipes</Link></li>
             <li><Link href={"/todos"}>Todos</Link></li>
+            <li><Link href={"/students"}>Students</Link></li>
           </ul>
         </div>
         <div className="navbar-end">
